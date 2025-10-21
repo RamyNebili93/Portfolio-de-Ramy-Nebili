@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets — Purplefolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Purplefolio</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a class="active" href="projects.html">Projets</a>
+      <a href="about.html">À propos</a>
+      <a class="btn ghost" href="index.html#contact">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="drawer" class="drawer" hidden>
+    <a class="active" href="projects.html">Projets</a>
+    <a href="about.html">À propos</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</header>
+
+<main class="container section">
+  <header class="pagehead">
+    <h1>Projets</h1>
+    <p class="lead">Sélection de travaux: produits numériques, sites web et identités visuelles.</p>
+  </header>
+
+  <!-- Filtres -->
+  <div class="filters">
+    <button class="chip is-active" data-filter="all">Tous</button>
+    <button class="chip" data-filter="uiux">UI/UX</button>
+    <button class="chip" data-filter="web">Web</button>
+    <button class="chip" data-filter="branding">Branding</button>
+  </div>
+
+  <section class="grid cards projects-grid">
+    <article class="card project" data-cat="uiux web">
+      <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop" alt="">
+      <div class="card__body">
+        <h3>Dashboard Fintech</h3>
+        <p>Design système · React UI</p>
+        <span class="tag">UI/UX</span>
+      </div>
+    </article>
+
+    <article class="card project" data-cat="web">
+      <img src="https://images.unsplash.com/photo-1522199777478-9c895941bf81?q=80&w=1400&auto=format&fit=crop" alt="">
+      <div class="card__body">
+        <h3>Landing SaaS</h3>
+        <p>Copywriting · Performance · SEO</p>
+        <span class="tag">Web</span>
+      </div>
+    </article>
+
+    <article class="card project" data-cat="branding">
+      <img src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?q=80&w=1400&auto=format&fit=crop" alt="">
+      <div class="card__body">
+        <h3>Identité — Studio photo</h3>
+        <p>Logo · Charte · Guide d’usage</p>
+        <span class="tag">Branding</span>
+      </div>
+    </article>
+
+    <article class="card project" data-cat="uiux">
+      <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1400&auto=format&fit=crop" alt="">
+      <div class="card__body">
+        <h3>App santé</h3>
+        <p>Parcours patient · Prototype</p>
+        <span class="tag">UI/UX</span>
+      </div>
+    </article>
+
+    <article class="card project" data-cat="web branding">
+      <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1400&auto=format&fit=crop" alt="">
+      <div class="card__body">
+        <h3>Site e‑commerce</h3>
+        <p>Identité & front‑end</p>
+        <span class="tag">Web</span>
+      </div>
+    </article>
+
+    <article class="card project" data-cat="branding">
+      <img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=1400&auto=format&fit=crop" alt="">
+      <div class="card__body">
+        <h3>Rebranding agence</h3>
+        <p>Logo, couleurs, typographies</p>
+        <span class="tag">Branding</span>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer">
+    <a class="logo" href="index.html">Purplefolio</a>
+    <nav class="foot-links">
+      <a class="active" href="projects.html">Projets</a>
+      <a href="about.html">À propos</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <p class="muted">© <span id="year"></span> Purplefolio.</p>
+  </div>
+</footer>
+
+<script src="./app.js" defer></script>
+</body>
+</html>

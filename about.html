@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>À propos — Purplefolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Purplefolio</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="projects.html">Projets</a>
+      <a class="active" href="about.html">À propos</a>
+      <a class="btn ghost" href="index.html#contact">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="drawer" class="drawer" hidden>
+    <a href="projects.html">Projets</a>
+    <a class="active" href="about.html">À propos</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</header>
+
+<main class="container section">
+  <header class="pagehead">
+    <h1>Bonjour, moi c’est Alex.</h1>
+    <p class="lead">Designer produit & développeur front‑end. J’aide les marques à créer des expériences claires, utiles et mémorables.</p>
+  </header>
+
+  <section class="about-grid reveal">
+    <figure class="about-cover">
+      <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=1200&auto=format&fit=crop" alt="Portrait créatif">
+    </figure>
+    <div class="about-text">
+      <h2>Approche</h2>
+      <p>Je combine recherche utilisateur, design systémique et code pour livrer rapidement des produits viables. Mes livrables: maquettes, prototypes, design system, composants web et déploiement.</p>
+      <div class="skills">
+        <span class="chip">Figma</span>
+        <span class="chip">Framer</span>
+        <span class="chip">HTML/CSS/JS</span>
+        <span class="chip">React</span>
+        <span class="chip">Design System</span>
+        <span class="chip">Accessibilité</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline section">
+    <h2>Parcours</h2>
+    <ol class="steps reveal">
+      <li>
+        <span class="when">2024 — aujourd’hui</span>
+        <div class="what">Freelance · Produits SaaS & sites marketing</div>
+      </li>
+      <li>
+        <span class="when">2022 — 2024</span>
+        <div class="what">Designer produit · Agence digitale</div>
+      </li>
+      <li>
+        <span class="when">2020 — 2022</span>
+        <div class="what">Graphiste · Marque & identité</div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section alt reveal">
+    <h2>Contact</h2>
+    <p>Disponible pour missions et collaborations. Dites‑moi en plus sur votre projet :</p>
+    <a class="btn primary ripple" href="index.html#contact">Écrire un message</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer">
+    <a class="logo" href="index.html">Purplefolio</a>
+    <nav class="foot-links">
+      <a href="projects.html">Projets</a>
+      <a class="active" href="about.html">À propos</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <p class="muted">© <span id="year"></span> Purplefolio.</p>
+  </div>
+</footer>
+
+<script src="./app.js" defer></script>
+</body>
+</html>

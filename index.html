@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purplefolio — Portfolio créatif</title>
+  <meta name="description" content="Designer & développeur — Portefolio créatif, projets et services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2244%22 fill=%22%237c3aed%22/><text x=%2250%22 y=%2260%22 text-anchor=%22middle%22 font-size=%2260%22 fill=%22white%22>P</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Purplefolio</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="projects.html">Projets</a>
+      <a href="about.html">À propos</a>
+      <a class="btn ghost" href="#contact">Contact</a>
+    </nav>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="drawer" class="drawer" hidden>
+    <a href="projects.html">Projets</a>
+    <a href="about.html">À propos</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero container">
+    <div class="hero__text">
+      <p class="eyebrow">Design · Développement · Marque</p>
+      <h1>Je conçois des expériences web élégantes qui transforment vos idées en produits.</h1>
+      <p class="lead">Sites vitrines, portfolios, landing pages et systèmes design. Du concept à la mise en ligne.</p>
+      <div class="cta-row">
+        <a class="btn primary ripple" href="projects.html">Voir mes projets</a>
+        <a class="btn ghost" href="#contact">Discuter d’un projet</a>
+      </div>
+      <div class="hero__meta">
+        <span>+20 projets livrés</span>
+        <span>Disponible en freelance</span>
+      </div>
+    </div>
+    <figure class="hero__image">
+      <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=1600&auto=format&fit=crop" alt="Mockup d’interface moderne" loading="eager">
+    </figure>
+  </section>
+
+  <!-- Projets en avant -->
+  <section class="container section">
+    <div class="section__head">
+      <h2>Projets en avant</h2>
+      <a class="link" href="projects.html">Tous les projets</a>
+    </div>
+    <div class="grid cards reveal">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=1400&auto=format&fit=crop" alt="">
+        <div class="card__body">
+          <h3>Plateforme SaaS — Analytics</h3>
+          <p>UI design, système de composants, site marketing.</p>
+          <span class="tag">UI/UX</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop" alt="">
+        <div class="card__body">
+          <h3>Portfolio d’artiste</h3>
+          <p>Direction artistique, typographie, performance.</p>
+          <span class="tag">Web</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1551281044-8d8d0d8d1f1a?q=80&w=1400&auto=format&fit=crop" alt="">
+        <div class="card__body">
+          <h3>Identité de marque</h3>
+          <p>Logo, couleurs, guidelines et landing page.</p>
+          <span class="tag">Branding</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="container section alt">
+    <div class="section__head">
+      <h2>Compétences & services</h2>
+    </div>
+    <div class="grid features reveal">
+      <div class="feature">
+        <h3>Design d’interface</h3>
+        <p>Wireframes, maquettes haute fidélité, prototypage et tests.</p>
+      </div>
+      <div class="feature">
+        <h3>Développement front‑end</h3>
+        <p>HTML, CSS, JavaScript moderne. Performant et accessible.</p>
+      </div>
+      <div class="feature">
+        <h3>Identité visuelle</h3>
+        <p>Logo, palette, composants UI cohérents multi‑supports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages -->
+  <section class="container section">
+    <div class="section__head">
+      <h2>Ce que disent mes clients</h2>
+    </div>
+    <div class="grid testimonials reveal">
+      <blockquote class="quote">
+        <p>“Un sens du détail rare et une vraie compréhension business.”</p>
+        <footer>— Julie, COO</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p>“Livré à temps, au‑delà du cahier des charges. Recommandé !”</p>
+        <footer>— Romain, Fondateur</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p>“Le site a doublé notre taux de conversion en 3 mois.”</p>
+        <footer>— Samira, Marketing</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container section alt">
+    <div class="section__head">
+      <h2>Parlons de votre projet</h2>
+    </div>
+    <form class="contact reveal" action="#" method="post" onsubmit="return false">
+      <div class="row">
+        <label>Nom
+          <input type="text" required placeholder="Votre nom">
+        </label>
+        <label>E‑mail
+          <input type="email" required placeholder="vous@exemple.com">
+        </label>
+      </div>
+      <label>Message
+        <textarea rows="5" required placeholder="Décrivez vos besoins…"></textarea>
+      </label>
+      <button class="btn primary ripple" type="submit">Envoyer</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer">
+    <a class="logo" href="index.html">Purplefolio</a>
+    <nav class="foot-links">
+      <a href="projects.html">Projets</a>
+      <a href="about.html">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="muted">© <span id="year"></span> Purplefolio. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="./app.js" defer></script>
+</body>
+</html>
